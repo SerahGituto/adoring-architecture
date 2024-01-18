@@ -52,3 +52,12 @@ export default function Search() {
     return form;
   }
 }
+<div>
+  {" "}
+  This app is
+  <a href="https://github.com/SerahGituto/adoring-architecture">
+    {" "}
+    open-source
+  </a>{" "}
+  coded by Serah Gituto.{" "}
+</div>;

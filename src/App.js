@@ -6,5 +6,6 @@ export default function App() {
       <h1> WEATHER SEARCH ENGINE</h1>
       <Search />
     </div>
+   < div>This project is open-source coded by Serah Gituto.</div>
   );
 }
