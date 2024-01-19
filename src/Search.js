@@ -9,7 +9,7 @@ export default function Search() {
   function updateCity(event) {
     setCity(event.target.value);
   }
-  function handleSubmit(response) {
+  function handleSubmit(event) {
     event.preventDefault();
     let apiKey = `082d3d02ffdb12f2fd9b259e2ced1d0d`;
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
@@ -32,6 +32,7 @@ export default function Search() {
       <input type="submit" value="submit" />
     </form>
   );
+
   if (message) {
     return (
       <div>
@@ -52,12 +53,3 @@ export default function Search() {
     return form;
   }
 }
-<div>
-  {" "}
-  This app is
-  <a href="https://github.com/SerahGituto/adoring-architecture">
-    {" "}
-    open-source
-  </a>{" "}
-  coded by Serah Gituto.{" "}
-</div>;
